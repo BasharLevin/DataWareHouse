@@ -1,0 +1,51 @@
+﻿store_id,name,location,location_code,type,employee_id,city,country
+1,Central Rentals,10 Market Road,HEL01,Shop,1,Helsinki,Finland
+2,North Rentals,20 Market Road,TAM01,Shop,3,Tampere,Finland
+3,Turku Rental Centre 03,70 Oak Street,TKU03,Shop,53,Turku,Finland
+4,Espoo Tool Hire 04,104 Workshop Lane,ESP04,Shop,4,Espoo,Finland
+5,Stockholm Equipment Hub 05,56 Industrial Way,STO05,Shop,5,Stockholm,Sweden
+6,Gothenburg Equipment Hub 06,69 Oak Street,GOT06,Shop,6,Gothenburg,Sweden
+7,Malmo Tool Hire 07,71 North Street,MAL07,Shop,7,Malmo,Sweden
+8,Uppsala Rental Centre 08,34 North Street,UPP08,Shop,8,Uppsala,Sweden
+9,Oslo Equipment Hub 09,4 North Street,OSL09,Shop,9,Oslo,Norway
+10,Bergen Tool Hire 10,120 Workshop Lane,BGO10,Shop,10,Bergen,Norway
+11,Trondheim Equipment Rentals 11,11 Station Road,TRD11,Service hub,11,Trondheim,Norway
+12,Copenhagen Equipment Rentals 12,76 North Street,CPH12,Shop,12,Copenhagen,Denmark
+13,Aarhus Equipment Rentals 13,134 Market Street,AAR13,Shop,13,Aarhus,Denmark
+14,Odense Equipment Hub 14,91 River Road,ODE14,Shop,14,Odense,Denmark
+15,Berlin Equipment Hub 15,17 River Road,BER15,Shop,15,Berlin,Germany
+16,Hamburg Equipment Hub 16,24 Birch Road,HAM16,Shop,16,Hamburg,Germany
+17,Munich Tool Hire 17,77 Workshop Lane,MUC17,Shop,17,Munich,Germany
+18,Cologne Tool Hire 18,22 Market Street,CGN18,Shop,18,Cologne,Germany
+19,Helsinki Equipment Rentals 19,70 Workshop Lane,HEL19,Shop,19,Helsinki,Finland
+20,Tampere Equipment Hub 20,100 Market Street,TAM20,Shop,20,Tampere,Finland
+21,Turku Equipment Rentals 21,40 Birch Road,TKU21,Shop,21,Turku,Finland
+22,Espoo Tool Hire 22,100 Oak Street,ESP22,Service hub,22,Espoo,Finland
+23,Stockholm Equipment Hub 23,107 River Road,STO23,Shop,23,Stockholm,Sweden
+24,Gothenburg Tool Hire 24,120 Central Avenue,GOT24,Shop,24,Gothenburg,Sweden
+25,Malmo Equipment Hub 25,93 Workshop Lane,MAL25,Shop,25,Malmo,Sweden
+26,Uppsala Equipment Hub 26,66 Central Avenue,UPP26,Shop,26,Uppsala,Sweden
+27,Oslo Rental Centre 27,6 Station Road,OSL27,Shop,27,Oslo,Norway
+28,Bergen Equipment Hub 28,127 Birch Road,BGO28,Shop,28,Bergen,Norway
+29,Trondheim Rental Centre 29,136 Workshop Lane,TRD29,Shop,29,Trondheim,Norway
+30,Copenhagen Rental Centre 30,125 Workshop Lane,CPH30,Shop,30,Copenhagen,Denmark
+31,Aarhus Tool Hire 31,105 Industrial Way,AAR31,Shop,31,Aarhus,Denmark
+32,Odense Equipment Rentals 32,41 Industrial Way,ODE32,Shop,32,Odense,Denmark
+33,Berlin Equipment Rentals 33,121 Workshop Lane,BER33,Service hub,33,Berlin,Germany
+34,Hamburg Equipment Hub 34,49 Industrial Way,HAM34,Shop,34,Hamburg,Germany
+35,Munich Rental Centre 35,54 Industrial Way,MUC35,Shop,35,Munich,Germany
+36,Cologne Equipment Rentals 36,17 Industrial Way,CGN36,Shop,36,Cologne,Germany
+37,Helsinki Tool Hire 37,48 North Street,HEL37,Shop,37,Helsinki,Finland
+38,Tampere Tool Hire 38,123 Birch Road,TAM38,Shop,38,Tampere,Finland
+39,Turku Equipment Rentals 39,7 Oak Street,TKU39,Shop,39,Turku,Finland
+40,Espoo Rental Centre 40,99 Station Road,ESP40,Shop,40,Espoo,Finland
+41,Stockholm Equipment Rentals 41,44 Industrial Way,STO41,Shop,41,Stockholm,Sweden
+42,Gothenburg Equipment Hub 42,14 Oak Street,GOT42,Shop,42,Gothenburg,Sweden
+43,Malmo Tool Hire 43,23 Oak Street,MAL43,Shop,43,Malmo,Sweden
+44,Uppsala Equipment Hub 44,57 Central Avenue,UPP44,Service hub,44,Uppsala,Sweden
+45,Oslo Tool Hire 45,74 Oak Street,OSL45,Shop,45,Oslo,Norway
+46,Bergen Equipment Hub 46,137 Oak Street,BGO46,Shop,46,Bergen,Norway
+47,Trondheim Equipment Hub 47,29 Industrial Way,TRD47,Shop,47,Trondheim,Norway
+48,Copenhagen Equipment Hub 48,27 North Street,CPH48,Shop,48,Copenhagen,Denmark
+49,Aarhus Rental Centre 49,39 Central Avenue,AAR49,Shop,49,Aarhus,Denmark
+50,Odense Tool Hire 50,31 Market Street,ODE50,Shop,50,Odense,Denmark

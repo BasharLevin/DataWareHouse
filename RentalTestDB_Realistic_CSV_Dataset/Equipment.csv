@@ -1,0 +1,201 @@
+﻿equipment_id,name,category,manufacturer
+1,Drill,Tools,Sample Tools
+2,Carpet Cleaner,Cleaning,Sample Clean
+3,Tent,Outdoor,Sample Outdoor
+4,Cordless Drill 2024 Series 1,Power Tools,Bosch
+5,Hammer Drill 2025 Series 2,Power Tools,Makita
+6,Circular Saw 2026 Series 3,Power Tools,DeWalt
+7,Angle Grinder 2020 Series 4,Power Tools,Hilti
+8,Pressure Washer 2021 Series 1,Cleaning,Karcher
+9,Carpet Cleaner 2022 Series 2,Cleaning,Nilfisk
+10,Floor Scrubber 2023 Series 3,Cleaning,Karcher
+11,Mini Excavator 2024 Series 4,Construction,Kubota
+12,Plate Compactor 2025 Series 1,Construction,Wacker Neuson
+13,Concrete Mixer 2026 Series 2,Construction,Belle
+14,Scissor Lift 2020 Series 3,Access,JLG
+15,Generator 2021 Series 4,Electrical,Honda
+16,Tower Light 2022 Series 1,Electrical,Atlas Copco
+17,Lawn Mower 2023 Series 2,Garden,Husqvarna
+18,Hedge Trimmer 2024 Series 3,Garden,Stihl
+19,Wood Chipper 2025 Series 4,Garden,Timberwolf
+20,Tent 2026 Series 1,Outdoor,Hilleberg
+21,Camping Heater 2020 Series 2,Outdoor,Primus
+22,Trailer 2021 Series 3,Transport,Brenderup
+23,Pallet Jack 2022 Series 4,Handling,Toyota
+24,Cordless Drill 2023 Series 1,Power Tools,Bosch
+25,Hammer Drill 2024 Series 2,Power Tools,Makita
+26,Circular Saw 2025 Series 3,Power Tools,DeWalt
+27,Angle Grinder 2026 Series 4,Power Tools,Hilti
+28,Pressure Washer 2020 Series 1,Cleaning,Karcher
+29,Carpet Cleaner 2021 Series 2,Cleaning,Nilfisk
+30,Floor Scrubber 2022 Series 3,Cleaning,Karcher
+31,Mini Excavator 2023 Series 4,Construction,Kubota
+32,Plate Compactor 2024 Series 1,Construction,Wacker Neuson
+33,Concrete Mixer 2025 Series 2,Construction,Belle
+34,Scissor Lift 2026 Series 3,Access,JLG
+35,Generator 2020 Series 4,Electrical,Honda
+36,Tower Light 2021 Series 1,Electrical,Atlas Copco
+37,Lawn Mower 2022 Series 2,Garden,Husqvarna
+38,Hedge Trimmer 2023 Series 3,Garden,Stihl
+39,Wood Chipper 2024 Series 4,Garden,Timberwolf
+40,Tent 2025 Series 1,Outdoor,Hilleberg
+41,Camping Heater 2026 Series 2,Outdoor,Primus
+42,Trailer 2020 Series 3,Transport,Brenderup
+43,Pallet Jack 2021 Series 4,Handling,Toyota
+44,Cordless Drill 2022 Series 1,Power Tools,Bosch
+45,Hammer Drill 2023 Series 2,Power Tools,Makita
+46,Circular Saw 2024 Series 3,Power Tools,DeWalt
+47,Angle Grinder 2025 Series 4,Power Tools,Hilti
+48,Pressure Washer 2026 Series 1,Cleaning,Karcher
+49,Carpet Cleaner 2020 Series 2,Cleaning,Nilfisk
+50,Floor Scrubber 2021 Series 3,Cleaning,Karcher
+51,Mini Excavator 2022 Series 4,Construction,Kubota
+52,Plate Compactor 2023 Series 1,Construction,Wacker Neuson
+53,Concrete Mixer 2024 Series 2,Construction,Belle
+54,Scissor Lift 2025 Series 3,Access,JLG
+55,Generator 2026 Series 4,Electrical,Honda
+56,Tower Light 2020 Series 1,Electrical,Atlas Copco
+57,Lawn Mower 2021 Series 2,Garden,Husqvarna
+58,Hedge Trimmer 2022 Series 3,Garden,Stihl
+59,Wood Chipper 2023 Series 4,Garden,Timberwolf
+60,Tent 2024 Series 1,Outdoor,Hilleberg
+61,Camping Heater 2025 Series 2,Outdoor,Primus
+62,Trailer 2026 Series 3,Transport,Brenderup
+63,Pallet Jack 2020 Series 4,Handling,Toyota
+64,Cordless Drill 2021 Series 1,Power Tools,Bosch
+65,Hammer Drill 2022 Series 2,Power Tools,Makita
+66,Circular Saw 2023 Series 3,Power Tools,DeWalt
+67,Angle Grinder 2024 Series 4,Power Tools,Hilti
+68,Pressure Washer 2025 Series 1,Cleaning,Karcher
+69,Carpet Cleaner 2026 Series 2,Cleaning,Nilfisk
+70,Floor Scrubber 2020 Series 3,Cleaning,Karcher
+71,Mini Excavator 2021 Series 4,Construction,Kubota
+72,Plate Compactor 2022 Series 1,Construction,Wacker Neuson
+73,Concrete Mixer 2023 Series 2,Construction,Belle
+74,Scissor Lift 2024 Series 3,Access,JLG
+75,Generator 2025 Series 4,Electrical,Honda
+76,Tower Light 2026 Series 1,Electrical,Atlas Copco
+77,Lawn Mower 2020 Series 2,Garden,Husqvarna
+78,Hedge Trimmer 2021 Series 3,Garden,Stihl
+79,Wood Chipper 2022 Series 4,Garden,Timberwolf
+80,Tent 2023 Series 1,Outdoor,Hilleberg
+81,Camping Heater 2024 Series 2,Outdoor,Primus
+82,Trailer 2025 Series 3,Transport,Brenderup
+83,Pallet Jack 2026 Series 4,Handling,Toyota
+84,Cordless Drill 2020 Series 1,Power Tools,Bosch
+85,Hammer Drill 2021 Series 2,Power Tools,Makita
+86,Circular Saw 2022 Series 3,Power Tools,DeWalt
+87,Angle Grinder 2023 Series 4,Power Tools,Hilti
+88,Pressure Washer 2024 Series 1,Cleaning,Karcher
+89,Carpet Cleaner 2025 Series 2,Cleaning,Nilfisk
+90,Floor Scrubber 2026 Series 3,Cleaning,Karcher
+91,Mini Excavator 2020 Series 4,Construction,Kubota
+92,Plate Compactor 2021 Series 1,Construction,Wacker Neuson
+93,Concrete Mixer 2022 Series 2,Construction,Belle
+94,Scissor Lift 2023 Series 3,Access,JLG
+95,Generator 2024 Series 4,Electrical,Honda
+96,Tower Light 2025 Series 1,Electrical,Atlas Copco
+97,Lawn Mower 2026 Series 2,Garden,Husqvarna
+98,Hedge Trimmer 2020 Series 3,Garden,Stihl
+99,Wood Chipper 2021 Series 4,Garden,Timberwolf
+100,Tent 2022 Series 1,Outdoor,Hilleberg
+101,Camping Heater 2023 Series 2,Outdoor,Primus
+102,Trailer 2024 Series 3,Transport,Brenderup
+103,Pallet Jack 2025 Series 4,Handling,Toyota
+104,Cordless Drill 2026 Series 1,Power Tools,Bosch
+105,Hammer Drill 2020 Series 2,Power Tools,Makita
+106,Circular Saw 2021 Series 3,Power Tools,DeWalt
+107,Angle Grinder 2022 Series 4,Power Tools,Hilti
+108,Pressure Washer 2023 Series 1,Cleaning,Karcher
+109,Carpet Cleaner 2024 Series 2,Cleaning,Nilfisk
+110,Floor Scrubber 2025 Series 3,Cleaning,Karcher
+111,Mini Excavator 2026 Series 4,Construction,Kubota
+112,Plate Compactor 2020 Series 1,Construction,Wacker Neuson
+113,Concrete Mixer 2021 Series 2,Construction,Belle
+114,Scissor Lift 2022 Series 3,Access,JLG
+115,Generator 2023 Series 4,Electrical,Honda
+116,Tower Light 2024 Series 1,Electrical,Atlas Copco
+117,Lawn Mower 2025 Series 2,Garden,Husqvarna
+118,Hedge Trimmer 2026 Series 3,Garden,Stihl
+119,Wood Chipper 2020 Series 4,Garden,Timberwolf
+120,Tent 2021 Series 1,Outdoor,Hilleberg
+121,Camping Heater 2022 Series 2,Outdoor,Primus
+122,Trailer 2023 Series 3,Transport,Brenderup
+123,Pallet Jack 2024 Series 4,Handling,Toyota
+124,Cordless Drill 2025 Series 1,Power Tools,Bosch
+125,Hammer Drill 2026 Series 2,Power Tools,Makita
+126,Circular Saw 2020 Series 3,Power Tools,DeWalt
+127,Angle Grinder 2021 Series 4,Power Tools,Hilti
+128,Pressure Washer 2022 Series 1,Cleaning,Karcher
+129,Carpet Cleaner 2023 Series 2,Cleaning,Nilfisk
+130,Floor Scrubber 2024 Series 3,Cleaning,Karcher
+131,Mini Excavator 2025 Series 4,Construction,Kubota
+132,Plate Compactor 2026 Series 1,Construction,Wacker Neuson
+133,Concrete Mixer 2020 Series 2,Construction,Belle
+134,Scissor Lift 2021 Series 3,Access,JLG
+135,Generator 2022 Series 4,Electrical,Honda
+136,Tower Light 2023 Series 1,Electrical,Atlas Copco
+137,Lawn Mower 2024 Series 2,Garden,Husqvarna
+138,Hedge Trimmer 2025 Series 3,Garden,Stihl
+139,Wood Chipper 2026 Series 4,Garden,Timberwolf
+140,Tent 2020 Series 1,Outdoor,Hilleberg
+141,Camping Heater 2021 Series 2,Outdoor,Primus
+142,Trailer 2022 Series 3,Transport,Brenderup
+143,Pallet Jack 2023 Series 4,Handling,Toyota
+144,Cordless Drill 2024 Series 1,Power Tools,Bosch
+145,Hammer Drill 2025 Series 2,Power Tools,Makita
+146,Circular Saw 2026 Series 3,Power Tools,DeWalt
+147,Angle Grinder 2020 Series 4,Power Tools,Hilti
+148,Pressure Washer 2021 Series 1,Cleaning,Karcher
+149,Carpet Cleaner 2022 Series 2,Cleaning,Nilfisk
+150,Floor Scrubber 2023 Series 3,Cleaning,Karcher
+151,Mini Excavator 2024 Series 4,Construction,Kubota
+152,Plate Compactor 2025 Series 1,Construction,Wacker Neuson
+153,Concrete Mixer 2026 Series 2,Construction,Belle
+154,Scissor Lift 2020 Series 3,Access,JLG
+155,Generator 2021 Series 4,Electrical,Honda
+156,Tower Light 2022 Series 1,Electrical,Atlas Copco
+157,Lawn Mower 2023 Series 2,Garden,Husqvarna
+158,Hedge Trimmer 2024 Series 3,Garden,Stihl
+159,Wood Chipper 2025 Series 4,Garden,Timberwolf
+160,Tent 2026 Series 1,Outdoor,Hilleberg
+161,Camping Heater 2020 Series 2,Outdoor,Primus
+162,Trailer 2021 Series 3,Transport,Brenderup
+163,Pallet Jack 2022 Series 4,Handling,Toyota
+164,Cordless Drill 2023 Series 1,Power Tools,Bosch
+165,Hammer Drill 2024 Series 2,Power Tools,Makita
+166,Circular Saw 2025 Series 3,Power Tools,DeWalt
+167,Angle Grinder 2026 Series 4,Power Tools,Hilti
+168,Pressure Washer 2020 Series 1,Cleaning,Karcher
+169,Carpet Cleaner 2021 Series 2,Cleaning,Nilfisk
+170,Floor Scrubber 2022 Series 3,Cleaning,Karcher
+171,Mini Excavator 2023 Series 4,Construction,Kubota
+172,Plate Compactor 2024 Series 1,Construction,Wacker Neuson
+173,Concrete Mixer 2025 Series 2,Construction,Belle
+174,Scissor Lift 2026 Series 3,Access,JLG
+175,Generator 2020 Series 4,Electrical,Honda
+176,Tower Light 2021 Series 1,Electrical,Atlas Copco
+177,Lawn Mower 2022 Series 2,Garden,Husqvarna
+178,Hedge Trimmer 2023 Series 3,Garden,Stihl
+179,Wood Chipper 2024 Series 4,Garden,Timberwolf
+180,Tent 2025 Series 1,Outdoor,Hilleberg
+181,Camping Heater 2026 Series 2,Outdoor,Primus
+182,Trailer 2020 Series 3,Transport,Brenderup
+183,Pallet Jack 2021 Series 4,Handling,Toyota
+184,Cordless Drill 2022 Series 1,Power Tools,Bosch
+185,Hammer Drill 2023 Series 2,Power Tools,Makita
+186,Circular Saw 2024 Series 3,Power Tools,DeWalt
+187,Angle Grinder 2025 Series 4,Power Tools,Hilti
+188,Pressure Washer 2026 Series 1,Cleaning,Karcher
+189,Carpet Cleaner 2020 Series 2,Cleaning,Nilfisk
+190,Floor Scrubber 2021 Series 3,Cleaning,Karcher
+191,Mini Excavator 2022 Series 4,Construction,Kubota
+192,Plate Compactor 2023 Series 1,Construction,Wacker Neuson
+193,Concrete Mixer 2024 Series 2,Construction,Belle
+194,Scissor Lift 2025 Series 3,Access,JLG
+195,Generator 2026 Series 4,Electrical,Honda
+196,Tower Light 2020 Series 1,Electrical,Atlas Copco
+197,Lawn Mower 2021 Series 2,Garden,Husqvarna
+198,Hedge Trimmer 2022 Series 3,Garden,Stihl
+199,Wood Chipper 2023 Series 4,Garden,Timberwolf
+200,Tent 2024 Series 1,Outdoor,Hilleberg

@@ -1,0 +1,21 @@
+﻿service_id,type,duration,cost
+1,Basic Care,2,15.00
+2,Full Care,3,25.00
+3,Safety Inspection 03,6,53.00
+4,Deep Cleaning 04,5,48.00
+5,Preventive Maintenance 05,5,68.00
+6,Blade Replacement 06,4,63.00
+7,Electrical Check 07,4,63.00
+8,Hydraulic Service 08,6,80.00
+9,Battery Service 09,5,72.00
+10,Engine Tune-up 10,5,55.00
+11,Calibration 11,5,51.00
+12,Minor Repair 12,6,63.00
+13,Safety Inspection 13,3,40.00
+14,Deep Cleaning 14,4,63.00
+15,Preventive Maintenance 15,5,56.00
+16,Blade Replacement 16,5,62.00
+17,Electrical Check 17,3,39.00
+18,Hydraulic Service 18,3,76.00
+19,Battery Service 19,6,67.00
+20,Engine Tune-up 20,4,67.00
