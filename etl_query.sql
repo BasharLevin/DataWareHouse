@@ -1,12 +1,15 @@
-USE RentalTestDB;
+
+USE [master];
 GO
 
-DROP DATABASE [RentalDW];
+IF DB_ID(N'RentalDW') IS NOT NULL
+    DROP DATABASE [RentalDW];
 GO
 
-CREATE DATABASE [Rental_DW];
+CREATE DATABASE [RentalDW];
+GO
 
-USE [Rental_DW];
+USE [RentalDW];
 GO
 
 CREATE TABLE dbo.DimCustomer
@@ -50,7 +53,7 @@ ProductID int NOT NULL UNIQUE,
 ProductName nvarchar(50) NULL,
 ProductCategory nvarchar(50) NULL,
 Manufacturer nvarchar(50) NULL,
-ProductStatus nvarchar(50) NULL,
+ProductStatus nvarchar(50) NULL
 );
 
 CREATE TABLE dbo.DimService
@@ -77,14 +80,17 @@ CREATE TABLE dbo.FactRentOrder
 RentID int NOT NULL,
 LineNumber int NOT NULL,
 DateKey int NOT NULL REFERENCES dbo.DimDate(DateKey),
+StartDate datetime2(0) NOT NULL,
+EndDateKey int NULL REFERENCES dbo.DimDate(DateKey),
+EndDate datetime2(0) NULL,
 CustomerKey int NOT NULL REFERENCES dbo.DimCustomer(CustomerKey),
 EmployeeKey int NOT NULL REFERENCES dbo.DimEmployee(EmployeeKey),
 StoreKey int NOT NULL REFERENCES dbo.DimStore(StoreKey),
+ReturnStoreKey int NULL REFERENCES dbo.DimStore(StoreKey),
 ProductKey int NOT NULL REFERENCES dbo.DimProduct(ProductKey),
-ServiceKey int NOT NULL REFERENCES dbo.DimService(ServiceKey),
+ServiceKey int NULL REFERENCES dbo.DimService(ServiceKey),
 Quantity int NULL,
 UnitPrice decimal(7,2) NULL,
-RentalAmount decimal(19,2) NULL,
 RentalDurationHours int NULL,
 MaintenanceCost decimal (7,2) NULL,
 VAT decimal(7,2) NULL,
@@ -103,8 +109,11 @@ ErrorMessage nvarchar(4000) NULL
 );
 GO
 
-ALTER TABLE dbo.FactRentOrder ALTER COLUMN ServiceKey int NULL;
-GO
+
+
+
+
+
 
 CREATE OR ALTER PROCEDURE dbo.LoadDimensions
 AS
@@ -167,9 +176,13 @@ BEGIN
         WHERE s.service_id NOT IN (SELECT ServiceID FROM dbo.DimService)
         SET @Rows += @@ROWCOUNT;
 
-        SELECT @FirstDate = MIN(CONVERT(date, startdate)),
-               @LastDate = MAX(CONVERT(date, startdate))
-        FROM [RentalTestDB].dbo.RentOrder;
+        -- Include all start AND calculated end dates in the calendar.
+        SELECT @FirstDate = MIN(d.CalendarDate), @LastDate = MAX(d.CalendarDate)
+        FROM [RentalTestDB].dbo.RentOrder AS ro
+        CROSS APPLY (VALUES
+            (CONVERT(date, ro.startdate)),
+            (CONVERT(date, DATEADD(hour, ro.RentalDurationHours, ro.startdate)))
+        ) AS d(CalendarDate);
 
         ;WITH Calendar AS
         (
@@ -224,24 +237,39 @@ BEGIN
         BEGIN TRANSACTION;
 
         INSERT dbo.FactRentOrder
-            (RentID, LineNumber, DateKey, CustomerKey, EmployeeKey, StoreKey,
-             ProductKey, ServiceKey, Quantity, UnitPrice, RentalAmount,
+            (RentID, LineNumber, DateKey, StartDate, EndDateKey, EndDate, CustomerKey, EmployeeKey, StoreKey, ReturnStoreKey,
+             ProductKey, ServiceKey, Quantity, UnitPrice,
              RentalDurationHours, MaintenanceCost, VAT)
-        SELECT rl.rentorder_id, rl.rentline_id, dd.DateKey, dc.CustomerKey,
-               de.EmployeeKey, ds.StoreKey, dp.ProductKey, dsvc.ServiceKey,
+        SELECT rl.rentorder_id, rl.rentline_id, dd.DateKey, CONVERT(datetime2(0), ro.startdate),
+               ed.DateKey, dates.EndDate, dc.CustomerKey,
+               de.EmployeeKey, ds.StoreKey, rs.StoreKey, dp.ProductKey, dsvc.ServiceKey,
                rl.qty, rl.unitprice,
-               CONVERT(decimal(19,2), CONVERT(decimal(10,0), rl.qty)
-                   * CONVERT(decimal(7,2), rl.unitprice)),
-               DATEDIFF(hour, ro.startdate, ro.enddate),
+               ro.RentalDurationHours,
                CASE WHEN rl.maintenance_id IS NULL THEN CONVERT(decimal(7,2), 0)
-                    ELSE svc.cost END, rl.VAT
+                    ELSE svc.cost END, 
+               rl.VAT
         FROM [RentalTestDB].dbo.RentLine AS rl
-        LEFT JOIN [RentalTestDB].dbo.RentOrder AS ro ON ro.rentorder_id = rl.rentorder_id
-        LEFT JOIN dbo.DimCustomer AS dc ON dc.CustomerID = ro.customer_id
-        LEFT JOIN dbo.DimEmployee AS de ON de.EmployeeID = ro.employee_id
-        LEFT JOIN dbo.DimStore AS ds ON ds.StoreID = ro.store_id
-        LEFT JOIN dbo.DimProduct AS dp ON dp.ProductID = rl.item_id
-        LEFT JOIN dbo.DimDate AS dd ON dd.CalendarDate = CONVERT(date, ro.startdate)
+        LEFT JOIN [RentalTestDB].dbo.RentOrder AS ro 
+            ON ro.rentorder_id = rl.rentorder_id
+        CROSS APPLY
+        (
+            SELECT CONVERT(datetime2(0),
+                DATEADD(hour, ro.RentalDurationHours, ro.startdate)) AS EndDate
+        ) AS dates
+        LEFT JOIN dbo.DimCustomer AS dc 
+            ON dc.CustomerID = ro.customer_id
+        LEFT JOIN dbo.DimEmployee AS de 
+            ON de.EmployeeID = ro.employee_id
+        LEFT JOIN dbo.DimStore AS ds 
+            ON ds.StoreID = ro.store_id
+        LEFT JOIN dbo.DimStore AS rs
+            ON rs.StoreID = ro.return_id
+        LEFT JOIN dbo.DimProduct AS dp 
+            ON dp.ProductID = rl.item_id
+        LEFT JOIN dbo.DimDate AS dd 
+            ON dd.CalendarDate = CONVERT(date, ro.startdate)
+        LEFT JOIN dbo.DimDate AS ed
+            ON ed.CalendarDate = CONVERT(date, dates.EndDate)
         LEFT JOIN [RentalTestDB].dbo.Maintenance AS m
             ON m.maintenance_id = rl.maintenance_id
         LEFT JOIN [RentalTestDB].dbo.Service AS svc ON svc.service_id = m.service_id
@@ -273,6 +301,6 @@ EXEC dbo.LoadDimensions;
 EXEC dbo.LoadSalesOrderLines;
 
 
+SELECT * FROM dbo.FactRentOrder ORDER BY RentID, LineNumber;
 
-select * from DimProduct
-SELECT * FROM dbo.FactRentOrder
+GO
