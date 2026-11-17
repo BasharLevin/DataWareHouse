@@ -12,4 +12,4 @@ The company rents light transport equipment in several countries and major citie
 ## Repository contents:
 - Database and data warehouse schematics
 - ETL script compatible with SSMS (etl_query.sql)
-- AI-generated database
+- AI-generated data for database
